@@ -1,0 +1,167 @@
+body {
+    margin: 0px;
+    font-family: Arial, sans-serif;
+}
+/*HEADER TITRE*/
+header, #timer {
+    justify-content: center;
+    align-items: center;
+    background-color: #FFA07A;
+    color: white;
+    padding: 25px;
+}
+header {
+    display:flex;
+    height: 50px;
+}
+header h1 {
+        margin: 0px 10px 0px 10px;
+}
+/*DIAPORAMA GUIDE*/
+#diaporama {
+    position: relative;
+}
+.image {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.image img {
+    height: 280px;
+    border: 1px solid;
+}
+figcaption {
+    padding: 20px;
+    width: 450px;
+}
+h2 {
+    color:#FFA07A;
+}
+#diaporama button {
+    background-color: #FFA07A;
+    border: solid 1px #FFA07A;
+    color: white;
+    height: 40px;
+    width: 40px;
+    font-size: 18px;
+}
+#diaporama button:hover {
+    background-color: white;
+    color: #FFA07A;   
+}
+#boutons {
+	text-align: center;
+}
+/*MAP STATIONS*/
+#map {
+    display: flex;
+}
+#map-stations {
+    height: 460px;
+    width: 1450px;
+    margin: 30px;
+}
+#station, #formulaire, #zone-signature {
+    display: flex;
+}
+#station, #station-choisi, form, #zone-signature {   
+    flex-direction: column;
+}
+#station, #station-choisi, form, #signature, #zone-signature {   
+    align-items: center;
+    justify-content: center;
+}
+#station {
+    position: relative;
+    height: 460px;
+    width: 400px;
+    margin: 30px 30px 30px 0px;
+    background-color: #FFA07A;
+    color: white;
+    display: flex;
+    font-size: 22px;
+}
+#station-selection {
+    margin: 0px 50px 0px 50px;
+}
+#station-choisi {
+    display: none;
+    position: relative;
+    bottom: 30px;
+    margin: 0px 40px 0px 40px;
+}
+/*ENCART SIGNATURE*/
+input, #zone-signature button, #supprimer {
+    border: 1px solid #FFA07A;
+}
+input {
+    margin-top: 20px;
+}
+input, #zone-signature button, #supprimer {
+    font-size: 19px;
+}
+#reserver, #zone-signature button, #supprimer {
+    background-color: white;
+    padding: 10px 10px 10px 10px;  
+}
+#reserver, #zone-signature button {
+    margin-top: 30px;
+}
+#reserver:hover, #zone-signature button:hover, #supprimer:hover {
+    color: #FFA07A;
+}
+#signature {
+    display: none;
+}
+#zone-signature {
+    justify-content: center;
+    background-color: #FFA07A;
+    width: 280px;
+    color: white;
+    margin-bottom: 30px;
+}
+#zone-signature h2 {
+    color: white;
+}
+#canvas {
+    background-color: white;
+}
+#zone-signature button {
+    margin: 20px 0px 20px 10px;
+}
+/*RESERVATION TIMER*/
+#timer {
+    display: none;
+    flex-direction: column;
+    font-size: 23px;
+    height: 200px;
+}
+/*RESPONSIVE DESIGN*/
+@media screen and (max-width: 1023px) {
+    .image {
+        flex-direction: column;
+    }
+    figcaption {
+        width: auto;
+        height: 170px;
+        text-align: center;
+        padding: 0px;
+    }
+    #map {
+        flex-direction: column;
+    }
+    #map-stations {
+        width: auto;
+    }
+    #station {
+        width: auto;
+        margin: 0px 30px 30px 30px;
+    }
+    #station-selection {
+    margin: 0px;
+    }
+    #timer {
+        height: 350px;
+    }
+}
